@@ -110,7 +110,7 @@ const educationInfo = {
       schoolName: "Universidade Paulista",
       logo: require("./assets/images/unip.png"),
       subHeader: "Bachelor in Information Technology",
-      duration: "2022 - 2024",
+      duration: "2022 - 2027",
       desc: "Focused on backend development, cloud computing and IT operations.",
       descBullets: [
         "Studied software development and system architecture",
