@@ -21,7 +21,7 @@ import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
 
-const Main = () => {
+const Main = ({ language, setLanguage }) => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
   const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
@@ -50,7 +50,7 @@ const Main = () => {
           <SplashScreen />
         ) : (
           <>
-            <Header />
+            <Header language={language} setLanguage={setLanguage} />
             <Greeting />
             <Skills />
             <StackProgress />

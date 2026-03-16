@@ -68,6 +68,22 @@
   padding: 0 10px;
 }
 
+.lang-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 0 4px;
+}
+
+.lang-btn:hover {
+  color: hsl(0, 100%, 50%);
+}
+
+.menu .lang-btn {
+  color: rgb(255, 0, 0);
+}
+
 /* menu */
 
 .header .menu {

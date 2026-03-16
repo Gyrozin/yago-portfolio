@@ -14,7 +14,7 @@ import {
   resumeSection
 } from "../../portfolio";
 
-function Header() {
+function Header({ language, setLanguage }) {
   const {isDark} = useContext(StyleContext);
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
